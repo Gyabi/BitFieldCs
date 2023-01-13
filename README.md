@@ -1,7 +1,3 @@
-<div align="center">
-<img src="./Docs/icon/2.png">
-</div>
-
 # BitFieldCs
 
 構造体メンバのbit長を指定してbyte配列を作成するUnityライブラリ 
