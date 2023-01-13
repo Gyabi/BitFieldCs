@@ -1,0 +1,2 @@
+# BitFieldCs
+構造体メンバのbit長を指定してbyte配列を作成するUnityライブラリ
