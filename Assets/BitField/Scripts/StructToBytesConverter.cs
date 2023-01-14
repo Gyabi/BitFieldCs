@@ -1,14 +1,15 @@
 using System.Linq;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
-using UnityEngine;
 using System.Runtime.InteropServices;
 
 namespace Bitfield
 {
-    public class BFConverter
+    /// <summary>
+    /// 構造体からbyte[]への変換処理を記述したクラス
+    /// </summary>
+    public class StructToBytesConverter
     {
         // 返還後のbyte配列を保持するためのlist
         List<byte> outputs;
@@ -17,7 +18,7 @@ namespace Bitfield
         // 今、操作しているビットのインデックス
         int currentIndex;
 
-        public BFConverter()
+        public StructToBytesConverter()
         {
             this.outputs = new List<byte>();
             this.currentBits = new BitArray(8);
@@ -30,7 +31,7 @@ namespace Bitfield
         /// <param name="data"></param>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public byte[] StructToBytes<T>(T data)
+        public byte[] Execute<T>(T data)
         {
             this.ConvertToBytesRecursive(data);
 

@@ -16,8 +16,11 @@ namespace Bitfield
             sample.sample3.sample2 = 3;
             sample.sample5 = 1;
 
+System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+sw.Start();
             byte[] bytes = BFConverterHelper.ToBytes(sample);
-
+sw.Stop();
+Debug.Log(sw.ElapsedMilliseconds + "ms");
             // byte[] bytes = PrimitiveConversion.ToBytes(sample);
 
             // Debug.Log(BitConverter.ToString(bytes));
