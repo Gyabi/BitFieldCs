@@ -86,8 +86,20 @@ static class PrimitiveConversion
 
 public struct SampleStruct
 {
+    [BitfieldLength(8)]
+    public int sample1;
+    [BitfieldLength(2)]
+    public uint sample2;
+    public SampleStruct2 sample3;
+    [BitfieldLength(8)]
+    public int sample4;
+    [BitfieldLength(3)]
+    public uint sample5;
+}
+public struct SampleStruct2
+{
     [BitfieldLength(2)]
     public int sample1;
-    [BitfieldLength(1)]
+    [BitfieldLength(2)]
     public uint sample2;
 }
