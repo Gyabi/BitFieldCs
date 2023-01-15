@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 832575519}
   - component: {fileID: 832575518}
   - component: {fileID: 832575520}
+  - component: {fileID: 832575521}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -413,8 +414,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832575517}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1567899d4d8cf734cbdce8848416dfd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &832575521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3caceef4ea3410b46b1f3dd2b5f2e5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
